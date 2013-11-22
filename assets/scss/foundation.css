@@ -4742,8 +4742,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #565656;
   font-size: 1.2em; }
-  p:last-child {
-    padding-bottom: 4em; }
+  @media only screen and (min-width: 768px) {
+    p:last-child {
+      padding-bottom: 4em; } }
   p.no-padding {
     padding-bottom: 1em; }
 
@@ -4778,20 +4779,32 @@ h2 {
     #slide.one h1, #slide.one h2 {
       color: #fff;
       font-size: 36px;
-      font-weight: 200; }
+      font-weight: 200;
+      line-height: 1em; }
     #slide.one h1 {
       font-size: 3em;
+      margin: 0;
+      padding: 0 0 .25em 0;
       font-family: "adobe-caslon-pro", Georgia, serif; }
       @media only screen and (min-width: 768px) {
         #slide.one h1 {
           font-size: 5em; } }
+    #slide.one h2 {
+      margin: 0;
+      padding: 0 0 3em 0;
+      opacity: .8;
+      font-weight: 100;
+      font-size: 20px; }
+      @media only screen and (min-width: 768px) {
+        #slide.one h2 {
+          font-size: 32px; } }
     #slide.one img {
-      width: 35px; }
+      width: 30px; }
   #slide.two h2 {
     padding-bottom: 1em; }
   #slide.two img {
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto 1em auto; }
   #slide.three .banner {
     margin: 3em 0;
     background: #eee;
@@ -4799,7 +4812,7 @@ h2 {
     width: 100;
     padding: 1.5em; }
     #slide.three .banner h2 {
-      font-size: 32px;
+      font-size: 28px;
       color: #112138; }
       @media only screen and (min-width: 768px) {
         #slide.three .banner h2 {
@@ -4836,13 +4849,13 @@ h2 {
       top: -8em; } }
 
 div.specs {
-  margin: 2em 0 0 0;
-  padding: 0 0 0 1em; }
+  margin: 0;
+  padding: 0 0 2em 0; }
   @media only screen and (min-width: 768px) {
     div.specs {
       border-left: 1px solid #603813;
       padding: 0 0 0 1em;
-      margin: 0; } }
+      margin: 1em 0 0 0; } }
 
 abbr {
   text-decoration: none;
